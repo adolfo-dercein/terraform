@@ -4,13 +4,13 @@
 
 terraform {
 
-  #required_providers {
-  #  azurerm = {
-  #    source  = "hashicorp/azurerm"
-  #    version = "=3.61.0"
-  #    skip_provider_registration = true
-  #  }
-  # }
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.61.0"
+      skip_provider_registration = true
+    }
+   }
 
   backend "azurerm" {
     resource_group_name  = "ResourceGroupWeek4"
