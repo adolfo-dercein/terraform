@@ -9,20 +9,7 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "=3.61.0"
     }
-    skip_provider_registration = true
    }
-
-  backend "azurerm" {
-    resource_group_name  = "ResourceGroupWeek4"
-    storage_account_name = "storageterraformendava"
-    container_name       = "tfstate"
-    key                  = "terraform.tfstate"
-   
-    # use_azuread_auth     = true
-    # subscription_id      = "dda87665-f724-4621-aeb9-99e5952215cb"
-    # tenant_id            = "66752e53-cd35-4a81-9bfb-c9bfbd2292dd"
-  }
-
 }
 
 provider "azurerm" {
